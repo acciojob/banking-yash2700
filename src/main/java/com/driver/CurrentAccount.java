@@ -26,7 +26,7 @@ public class CurrentAccount extends BankAccount{
         if (balance<5000) throw new Exception("Insufficient Balance");
 
     }
-    static char getMaxCountChar(int[] count)
+    public char getMaxCountChar(int[] count)
     {
         int max = 0;
         char ch = 0;
@@ -39,7 +39,7 @@ public class CurrentAccount extends BankAccount{
         return ch;
     }
 
-    static String rearrangeString(String S)
+    public String rearrangeString(String S)
     {
 
         int N = S.length();
