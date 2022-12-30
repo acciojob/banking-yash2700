@@ -2,10 +2,10 @@ package com.driver;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        BankAccount ba=new BankAccount("Yaswanth",1000,100);
-        ba.deposit(10);
-        System.out.println(ba.getBalance());
-        ba.withdraw(1000);
-        System.out.println(ba.getBalance());
+        SavingsAccount sa=new SavingsAccount("Yaswanth",10000,1000,5);
+        System.out.println(sa.getBalance());
+        sa.withdraw(1000);
+        System.out.println(sa.getBalance());
+        System.out.println(sa.getCompoundInterest(4,5));
     }
 }
